@@ -16,11 +16,14 @@ body{
     max-width: 1280px;
     margin: 0 auto;
 }
+.flex{
+display: flex;
+}
 
 /*ESTILO NAVBAR*/
 
 header{
-    padding: 40px 4%;
+    padding: 20px 4%;
 }
 
 header > .container{
@@ -32,10 +35,13 @@ header > .container{
 header a{
     color: white;
     text-decoration: none;
+    display: inline-block;
+    transition: .2s;
 }
 
 header a:hover{
     color: orange;
+    transform: scale(1.25);
 }
 
 header nav ul{
@@ -55,4 +61,80 @@ header .btn-contato button{
     border: 0;
     border-radius: 13px;
     cursor: pointer;
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 5px orange;
+}
+
+/* ESTILO PRINCIPAL*/
+
+.section.principal{
+    padding: 20px 4%;
+}
+
+section.principal .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.principal h1{
+color: white;
+font-size: 50px;
+padding-left: 40px;
+}
+
+.principal .txt-principal-esquerdo p {
+    line-height: 20px;
+    color:#fff;
+    margin: 40px 0px;
+    padding-left: 40px;
+}
+
+.whatsapp-link {
+    display: block;
+    width: 100px; 
+    height: 100px; 
+    
+}
+
+.whatsapp-icon {
+    width: 100%; 
+    height: 100%; 
+    margin: auto;
+}
+
+
+.whatsapp-link:focus,
+.whatsapp-link:hover {
+    outline: none; 
+}
+
+.whatsapp-link:focus .whatsapp-icon,
+.whatsapp-link:hover .whatsapp-icon {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+.img-direita{
+    width: 100%;
+    height: 100%;
+    padding-left: 200px;
+}
+
+.principal .img-direita img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+
 }
