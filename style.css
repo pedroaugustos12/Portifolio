@@ -20,6 +20,23 @@ body{
 display: flex;
 }
 
+h2.titulo{
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+
+}
+
+h2.titulo span{
+    color: #ff8800;
+}
+
+ button:hover{
+    box-shadow: 0px 0px 4px #fff;
+    transform: scale(1.05);
+}
+
+
 /*ESTILO NAVBAR*/
 
 header{
@@ -40,7 +57,7 @@ header a{
 }
 
 header a:hover{
-    color: orange;
+    color: #ff8800;
     transform: scale(1.25);
 }
 
@@ -50,27 +67,30 @@ header nav ul{
 
 header nav li{
     display: inline-block;
-    padding: 0 30px;
+    padding: 5px 40px;
 }
 
 header .btn-contato button{
     padding: 10px;
     font-size: 18px;
     font-weight: 800;
-    background-color: orange;
+    background-color: #ff8800;
     border: 0;
     border-radius: 13px;
     cursor: pointer;
 }
 
-header .btn-contato button:hover{
-    box-shadow: 0px 0px 5px orange;
+
+.logo{
+    box-shadow: none;
+    border: none;
 }
+
 
 /* ESTILO PRINCIPAL*/
 
 .section.principal{
-    padding: 20px 4%;
+    padding: 40px 4%;
 }
 
 section.principal .flex{
@@ -90,6 +110,8 @@ padding-left: 40px;
     color:#fff;
     margin: 40px 0px;
     padding-left: 40px;
+    gap: 50px;
+    text-align: justify;
 }
 
 .whatsapp-link {
@@ -121,7 +143,7 @@ padding-left: 40px;
 .img-direita{
     width: 100%;
     height: 100%;
-    padding-left: 200px;
+    
 }
 
 .principal .img-direita img{
@@ -138,3 +160,79 @@ padding-left: 40px;
     }
 
 }
+
+/*ESPECIALIDADES*/
+
+section.especialidades{
+    padding: 40px;
+}
+
+section.especialidades .flex{
+    gap: 50px;
+}
+
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 40px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffffff;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 50px;
+    color: #ff8800;
+}
+
+.especialidades .especialidades-box h3{
+font-size: 20px;
+margin: 15px 0;
+}
+
+/*SOBRE*/
+
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 10px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color:#ff8800;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-sociais button{
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    border: none;
+    background-color: orange;
+    margin: 0 3px;
+    font-size: 20px;
+    cursor: pointer;  
+}
+
