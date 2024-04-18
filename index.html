@@ -12,24 +12,27 @@
         rel="stylesheet">
     <!--Fontes//-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <script src="menu.js" defer></script>
+
     <title>Meu portifolio</title>
+
+
 </head>
 
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <a href="#">
-                    <img src="/imagens/logopa.png" alt="logo">
-                </a>
+              <img src="/imagens/logopa.png" style="width: 350px; " alt="logo">
             </div> <!--logo-->
 
             <nav class="menu1">
                 <ul>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#port">Projetos</a></li>
+                    <li><a href="#cntt">Fale comigo</a></li>
                 </ul>
             </nav> <!--menu principal-->
             <div class="btn-contato">
@@ -38,6 +41,28 @@
                 </a> <!--botão contato-->
             </div>
 
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x"></i>
+                </div>
+                <nav >
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#port">Projetos</a></li>
+                        <li><a href="#cntt">Fale comigo</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav> <!--menu mobile-->
+            </div><!--menu mobile-->
+
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div>
 
         </div><!--container-->
     </header>
@@ -53,7 +78,7 @@
                             quia fugit qui voluptatem totam! Eum pariatur nemo quo repudiandae ipsa non molestiae
                             tenetur est perferendis voluptates a magni obcaecati ut vitae fuga in odio suscipit.
                             Aut possimus rerum qui quaerat iusto eum exercitationem reiciendis rem distinctio magni et
-                            laborum galisum rem fuga galisum et assumenda modi. 
+                            laborum galisum rem fuga galisum et assumenda modi.
                         </p>
                         <p>
                             Et perspiciatis dolorem id doloribus
@@ -74,7 +99,7 @@
 
         <section class="especialidades">
             <div class="interface">
-                <h2 class="titulo">ESPECIA<span>LIDADES</span></h2>
+                <h2 class="titulo" id="especialidades">ESPECIA<span>LIDADES</span></h2>
                 <div class="flex">
                     <div class="especialidades-box">
                         <i class="bi bi-shop"></i>
@@ -100,7 +125,7 @@
             </div> <!--interface-->
         </section> <!--Especialidades-->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
 
@@ -116,20 +141,24 @@
                         <P> Lorem ipsum dolor sit amet. Sed omnis harum aut consequuntur quibusdam et cumque odio rem
                             quia fugit qui voluptatem totam! Eum pariatur nemo quo repudiandae ipsa non molestiae
                             tenetur est perferendis voluptates a magni obcaecati ut vitae fuga in odio suscipit.</P>
-                           <div class="btn-sociais">
-                            <a href="https://instagram.com/pedroo_aaugustos" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="https://www.linkedin.com/in/pedro-augusto-4866b2238/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="https://discord.com/channels/580533796567384069" target="_blank"><button><i class="bi bi-discord"></i></button></a>
-                            <a href="https://github.com/pedroaugustos12" target="_blank"><button><i class="bi bi-github"></i></button></a>
-                            <a href="https://wa.me/5584996659308" target="_blank"><button><i class="bi bi-whatsapp" target="_blank"></i></button></a>
-                           </div> 
-                    </div>
-                </div>
-            </div><!--interface-->
+                        <div class="btn-sociais">
+                            <a href="https://instagram.com/pedroo_aaugustos" target="_blank"><button><i
+                                        class="bi bi-instagram"></i></button></a>
+                            <a href="https://www.linkedin.com/in/pedro-augusto-4866b2238/" target="_blank"><button><i
+                                        class="bi bi-linkedin"></i></button></a>
+                            <a href="https://discord.com/channels/580533796567384069" target="_blank"><button><i
+                                        class="bi bi-discord"></i></button></a>
+                            <a href="https://github.com/pedroaugustos12" target="_blank"><button><i
+                                        class="bi bi-github"></i></button></a>
+                            <a href="https://wa.me/5584996659308" target="_blank"><button><i class="bi bi-whatsapp"
+                                        target="_blank"></i></button></a>
+                        </div> <!--botões redes sociais-->
+                    </div> <!--texto sobre-->
+                </div><!--interface-->
         </section><!--sobre-->
 
 
-        <section class="portfolio">
+        <section class="portfolio" id="port">
 
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTFÓLIO</span></h2>
@@ -137,7 +166,7 @@
                     <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
                         <div class="efeito">Projeto 01</div>
                     </div>
-                    <div class="img-port" style="background-image: url(imagens/imagem.jpg)"> 
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg)">
                         <div class="efeito">Projeto 02</div>
                     </div>
                     <div class="img-port" style="background-image: url(imagens/imagem.jpg)">
@@ -149,13 +178,13 @@
         </section><!--portifolio-->
 
 
-        <section class="form"> 
+        <section class="form" id="cntt">
             <div class="interface">
-                <h2 class="titulo">ENTRE EM <span>CONTATO :</span></h2>
+                <h2 class="titulo" >ENTRE EM <span>CONTATO :</span></h2>
                 <form action="">
                     <input type="text" name="" id="" placeholder="SEU NOME COMPLETO:" required>
-                    <input type="text" name="" id="" placeholder="SEU EMAIL:"required>
-                    <input type="text" name="" id="" placeholder="SEU CELULAR:"required>
+                    <input type="text" name="" id="" placeholder="SEU EMAIL:" required>
+                    <input type="text" name="" id="" placeholder="SEU CELULAR:" required>
                     <textarea name="" id="" placeholder="DIGITE AQUI SUA MENSAGEM" required></textarea>
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
                 </form> <!--formulario-->
@@ -163,6 +192,37 @@
         </section><!--form-->
 
     </main>
+
+    <footer>
+        <div class="interface">
+            <div class="linha-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="imagens/logopa.png" style="height: 150px;" alt="logo">
+                    </div><!--logo-footer-->
+                    <div class="btn-sociais">
+                        <a href="https://instagram.com/pedroo_aaugustos" target="_blank"><button><i
+                                    class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.linkedin.com/in/pedro-augusto-4866b2238/" target="_blank"><button><i
+                                    class="bi bi-linkedin"></i></button></a>
+                        <a href="https://discord.com/channels/580533796567384069" target="_blank"><button><i
+                                    class="bi bi-discord"></i></button></a>
+                        <a href="https://github.com/pedroaugustos12" target="_blank"><button><i
+                                    class="bi bi-github"></i></button></a>
+                        <a href="https://wa.me/5584996659308" target="_blank"><button><i class="bi bi-whatsapp"
+                                    target="_blank"></i></button></a>
+                    </div> <!--botões redes sociais-->
+                </div>
+            </div><!-- linha-footer -->
+
+            <div class="linha-footer borda">
+                <p><i class="bi bi-envelope-fill"></i><a href="mailto:pedroaugustosdev@gmail.com"
+                        target="_blank">pedroaugustosdev@gmail.com</a></p>
+                    <p class="copy">&copy;Pedro Augusto 2024</p>
+            </div><!--linha2-->
+
+        </div><!--interface-->
+    </footer><!--rodape-->
 
 </body>
 
