@@ -1,76 +1,77 @@
 /*ESTILO GERAL*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
 
-body{
+body {
     background-color: grey;
     height: 100vh;
 }
 
-.container{
+.container {
     max-width: 1280px;
     margin: 0 auto;
 }
-.flex{
-display: flex;
+
+.flex {
+    display: flex;
 }
 
-h2.titulo{
+h2.titulo {
     color: #fff;
     font-size: 35px;
     text-align: center;
 
 }
 
-h2.titulo span{
+h2.titulo span {
     color: #ff8800;
 }
 
- button:hover{
-    box-shadow: 0px 0px 4px #fff;
+button:hover, form .btn-enviar input:hover {
+    box-shadow: 0px 0px 6px #fff;
     transform: scale(1.05);
 }
 
 
 /*ESTILO NAVBAR*/
 
-header{
+header {
     padding: 20px 4%;
 }
 
-header > .container{
+header>.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header a{
+header a {
     color: white;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 
-header a:hover{
+header a:hover {
     color: #ff8800;
     transform: scale(1.25);
 }
 
-header nav ul{
-   list-style-type: none;
+header nav ul {
+    list-style-type: none;
 }
 
-header nav li{
+header nav li {
     display: inline-block;
     padding: 5px 40px;
 }
 
-header .btn-contato button{
+header .btn-contato button {
     padding: 10px;
     font-size: 18px;
     font-weight: 800;
@@ -81,7 +82,7 @@ header .btn-contato button{
 }
 
 
-.logo{
+.logo {
     box-shadow: none;
     border: none;
 }
@@ -89,25 +90,25 @@ header .btn-contato button{
 
 /* ESTILO PRINCIPAL*/
 
-.section.principal{
+.section.principal {
     padding: 40px 4%;
 }
 
-section.principal .flex{
+section.principal .flex {
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
 
-.principal h1{
-color: white;
-font-size: 50px;
-padding-left: 40px;
+.principal h1 {
+    color: white;
+    font-size: 50px;
+    padding-left: 40px;
 }
 
 .principal .txt-principal-esquerdo p {
     line-height: 20px;
-    color:#fff;
+    color: #fff;
     margin: 40px 0px;
     padding-left: 40px;
     gap: 50px;
@@ -116,21 +117,21 @@ padding-left: 40px;
 
 .whatsapp-link {
     display: block;
-    width: 100px; 
-    height: 100px; 
-    
+    width: 100px;
+    height: 100px;
+
 }
 
 .whatsapp-icon {
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
     margin: auto;
 }
 
 
 .whatsapp-link:focus,
 .whatsapp-link:hover {
-    outline: none; 
+    outline: none;
 }
 
 .whatsapp-link:focus .whatsapp-icon,
@@ -140,22 +141,23 @@ padding-left: 40px;
 }
 
 
-.img-direita{
+.img-direita {
     width: 100%;
     height: 100%;
-    
+
 }
 
-.principal .img-direita img{
+.principal .img-direita img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-@keyframes flutuar{
-    0%{
+@keyframes flutuar {
+    0% {
         top: 0;
     }
-    100%{
+
+    100% {
         top: 30px;
     }
 
@@ -163,15 +165,15 @@ padding-left: 40px;
 
 /*ESPECIALIDADES*/
 
-section.especialidades{
+section.especialidades {
     padding: 40px;
 }
 
-section.especialidades .flex{
+section.especialidades .flex {
     gap: 50px;
 }
 
-.especialidades .especialidades-box{
+.especialidades .especialidades-box {
     color: #fff;
     padding: 25px;
     border-radius: 10px;
@@ -179,44 +181,44 @@ section.especialidades .flex{
     transition: .2s;
 }
 
-.especialidades .especialidades-box:hover{
+.especialidades .especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px #ffffff;
 }
 
-.especialidades .especialidades-box i{
+.especialidades .especialidades-box i {
     font-size: 50px;
     color: #ff8800;
 }
 
-.especialidades .especialidades-box h3{
-font-size: 20px;
-margin: 15px 0;
+.especialidades .especialidades-box h3 {
+    font-size: 20px;
+    margin: 15px 0;
 }
 
 /*SOBRE*/
 
-section.sobre{
+section.sobre {
     padding: 40px 4%;
 }
 
-section.sobre .flex{
+section.sobre .flex {
     align-items: center;
     gap: 10px;
 }
 
-.sobre .txt-sobre{
+.sobre .txt-sobre {
     color: #fff;
 }
 
-.sobre .txt-sobre h2{
+.sobre .txt-sobre h2 {
     font-size: 30px;
     line-height: 40px;
     margin-bottom: 30px;
 }
 
-.sobre .txt-sobre h2 span{
-    color:#ff8800;
+.sobre .txt-sobre h2 span {
+    color: #ff8800;
     display: block;
 }
 
@@ -225,7 +227,7 @@ section.sobre .flex{
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-sociais button{
+.sobre .txt-sobre .btn-sociais button {
     width: 44px;
     height: 44px;
     border-radius: 22px;
@@ -233,6 +235,107 @@ section.sobre .flex{
     background-color: orange;
     margin: 0 3px;
     font-size: 20px;
-    cursor: pointer;  
+    cursor: pointer;
+}
+
+
+/*PORTIFOLIO*/
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff23;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 10s;
+    cursor: pointer;
+    border-radius: 30px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.efeito {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000073;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: 1s;
+}
+
+.efeito:hover {
+    opacity: 1;
+}
+
+
+/*FORMULARIO*/
+
+section.formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #00000065;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+form input::placeholder {
+    color: #fff;
+}
+
+form textarea {
+    resize:none ;
+    max-height: 500px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+form .btn-enviar input {
+    width: 300px;
+    background-color: #ff8800;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 1s;
 }
 
